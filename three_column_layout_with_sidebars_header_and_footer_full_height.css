@@ -1,0 +1,78 @@
+html,
+body {
+  height: 100%;
+}
+
+.container {
+  height: 100%;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.container .row {
+  text-align: center;
+  color: white;
+  font-family: sans-serif;
+  font-size: 36px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.container .row-1 {
+  background-color: green;
+  height: 60px;
+}
+.container .row-2 {
+  background-color: blue;
+  flex: 1;
+  /* Turns this row-2 into a flex container to rule its children */
+  padding: 0px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+}
+
+    /* .container .row-2 children */
+        
+    .main {
+        padding: 10px;
+        text-align: left;
+        background: deepskyblue;
+        flex: 1;
+        order: 2;
+    }
+    
+    .aside-1 {
+        padding: 10px;
+        background: gold;
+        order: 1;
+    }
+    
+    .aside-2 {
+        padding: 10px;
+        background: hotpink;
+        order: 3;
+    }
+
+    /*
+    @media all and (min-width: 600px) {
+        .aside { flex: 1 0 0; }
+    }
+    */
+    
+    /*
+    @media all and (min-width: 800px) {
+        .main    { flex: 3 0px; }
+        .aside-1 { order: 1; } 
+        .main    { order: 2; }
+        .aside-2 { order: 3; }
+    }
+    */
+
+    /* end .container .box-2 children */
+
+.container .row-3 {
+  background-color: red;
+  height: 60px;
+}
